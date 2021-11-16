@@ -4,9 +4,10 @@
 
 :root {
   /*Define as variáveis de cores para todo site, caso necessário alterar as cores alterasse aqui apenas*/
-  --cor-primaria: rgb(255, 192, 203);
-  --cor-secundaria: whitesmoke;
-  --cor-terceira: rgb(135, 255, 134);
+  --cor-primaria: rgba(209, 209, 209, 0.8);
+  --cor-secundaria: rgb(245, 245, 245);
+  --cor-terceira: rgb(159, 197, 159);
+  --cor-detalhes: rgb(248, 218, 223);
 }
 
 .App {

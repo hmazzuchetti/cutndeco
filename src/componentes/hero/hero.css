@@ -9,7 +9,12 @@
   justify-items: center;
 }
 
-.hero .bckgd {
+.waves {
+  position: absolute;
+  z-index: 0;
+}
+
+.bckgd {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -17,10 +22,9 @@
   left: 0;
   right: 0;
   background: url("../../img/Natal/capanatal.jpg");
-  opacity: 60%;
+  opacity: 90%;
   height: 100%;
   width: 100%;
-  box-shadow: 0px 4px var(--cor-primaria);
   background-position: 0px 500px;
   background-size: 100%;
   animation: vaivolta 15s infinite;
