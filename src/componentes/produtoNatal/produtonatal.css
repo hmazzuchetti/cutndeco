@@ -35,31 +35,32 @@
   height: 100%;
   width: 100%;
   opacity: 70%;
-  animation: brilha 4s infinite;
+  animation: brilha 3s infinite;
 }
 
 @keyframes brilha {
   0% {
-    opacity: 70%;
+    opacity: 50%;
   }
   50% {
     opacity: 100%;
   }
   100% {
-    opacity: 70%;
+    opacity: 50%;
   }
 }
 
 .pGrande {
   color: #000000;
-  font-family: "Trocchi", serif;
+  /* font-family: "Trocchi", serif; */
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bolder;
   line-height: 48px;
   margin: 0;
   font-size: 3rem;
   align-self: end;
   justify-self: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 3;
 }
 
@@ -78,7 +79,7 @@
 
 .pGrande::before {
   content: "";
-  background: white;
+  background: var(--cor-detalhes);
   position: absolute;
   height: 1em;
   width: 70%;
@@ -93,7 +94,7 @@
 
 .pPequeno::before {
   content: "";
-  background: white;
+  background: var(--cor-detalhes);
   position: absolute;
   height: 1em;
   width: 50%;
@@ -125,7 +126,7 @@
   max-height: 4rem;
   height: 100%;
   border: 0px;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-detalhes);
   box-shadow: 4px 2px 5px black;
   border-radius: 5%;
   cursor: pointer;
