@@ -1,0 +1,25 @@
+.container-produtos {
+  height: 40rem;
+}
+
+.container-produtos > h1 {
+  font-size: 4rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+
+.container-produtos > h1::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  left: 0;
+  top: 88rem;
+  background: var(--cor-primaria);
+  height: 1rem;
+}
+
+.gridFotos {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 100%;
+}

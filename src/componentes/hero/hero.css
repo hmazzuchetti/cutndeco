@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  z-index: 5;
+  margin-top: 0.5rem;
+  height: 400px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero .bckgd {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../../img/Natal/capanatal.jpg");
+  opacity: 60%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 4px var(--cor-primaria);
+  background-position: 0px 500px;
+  background-size: 100%;
+  animation: vaivolta 15s infinite;
+}
+
+@keyframes vaivolta {
+  0% {
+    background-position: 0px 500px;
+  }
+  50% {
+    background-position: 0px 1030px;
+  }
+  100% {
+    background-position: 0px 500px;
+  }
+}
+
+.hero > h1 {
+  text-transform: uppercase;
+  font-size: 7rem;
+  color: var(--cor-secundaria);
+  text-shadow: 2px 2px black;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.hero > h2 {
+  align-self: flex-start;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px var(--cor-secundaria);
+  line-height: 5rem;
+  padding-top: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btnHero {
+  height: 80px;
+  width: 180px;
+  background: var(--cor-secundaria);
+  opacity: 90%;
+  border: 0px;
+  box-shadow: 4px 4px 5px black;
+  cursor: pointer;
+  transition: transform 450ms;
+  border-radius: 10px;
+}
+
+.btnHero > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.btnHero:hover {
+  transform: scale(115%);
+}
+
+@media (max-width: 1024px) {
+  .hero > h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero > h1 {
+    font-size: 2rem;
+  }
+
+  .hero > h2 {
+    font-size: 1rem;
+  }
+}

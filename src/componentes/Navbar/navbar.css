@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--cor-secundaria);
+  box-shadow: 0rem 0.5rem pink;
+}
+
+.navbar > a,
+.btn-cadastro > a {
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+.navbar > a:hover {
+  color: var(--cor-primaria);
+  text-decoration: underline;
+}
+
+.btn-cadastro {
+  height: 150px;
+  width: 8rem;
+  background-color: var(--cor-primaria);
+  border: 0px;
+  cursor: pointer;
+}
+
+.btn-cadastro:hover {
+}
+
+.logoNavbar {
+  height: 150px;
+}
