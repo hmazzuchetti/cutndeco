@@ -14,8 +14,8 @@ function ProdutoNatal() {
                 <p className="pGrande">Procurando presente?</p>
                 <p className="pPequeno"> Veja nossas caixinhas de natal!</p>
                 <div className="btns">
-                    <button className="btnCaixa"><p>Fazer pedido</p></button>
-                    <button className="btnCaixa"><p>Ver fotos</p></button>
+                    <button className="btnCaixa" onclick="location.href='http://google.com';"><p>Fazer pedido</p></button>
+                    <button className="btnCaixa" onclick="window.open('https://www.instagram.com/cutn.deco/','_blank')"><a href="window.open('https://www.instagram.com/cutn.deco/','_blank')">Ver fotos</a></button>
                 </div>
                 <div className="cardBckgd"></div>
             </div>

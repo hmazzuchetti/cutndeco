@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--cor-secundaria);
+  background-color: rgb(243, 243, 243);
   box-shadow: 0rem 0.5rem var(--cor-detalhes);
 }
 
@@ -16,11 +16,10 @@
 
 .navbar > a:hover {
   color: var(--cor-terceira);
-  text-decoration: underline;
 }
 
 .btn-cadastro {
-  height: 150px;
+  height: 120px;
   width: 8rem;
   background-color: var(--cor-detalhes);
   border: 0px;
@@ -32,5 +31,5 @@
 }
 
 .logoNavbar {
-  height: 150px;
+  height: 120px;
 }

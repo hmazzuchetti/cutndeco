@@ -1,25 +1,173 @@
+.containerOutubroRosa {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 50rem;
+  width: 100%;
+  padding-bottom: 4rem;
+  padding-top: 0.5rem;
+}
+
 .container-produtos {
-  height: 40rem;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 20% 40% 40%;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
-.container-produtos > h1 {
-  font-size: 4rem;
-  margin-left: 2rem;
-  text-transform: uppercase;
+.header {
+  padding: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: rgb(46, 139, 87);
 }
 
-.container-produtos > h1::after {
-  content: "";
-  position: absolute;
-  width: 55%;
-  left: 0;
-  top: 88rem;
-  background: var(--cor-primaria);
-  height: 1rem;
+.titulo {
+  position: relative;
+  font-size: 3rem;
+  /* text-transform: uppercase; */
+  font-family: "Raleway", sans-serif;
 }
 
 .gridFotos {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.outubro--rosa {
+  padding-top: 1.5rem;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.outubro {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  align-self: start;
+}
+
+.rosa {
+  color: rgb(255, 104, 129);
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  align-self: start;
+}
+.title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.img--outubro--rosa--1 {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  height: 100%;
+  width: 98%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 3px 3px 8px rgb(255, 104, 129);
+  object-fit: cover;
+}
+
+.img--outubro--rosa--1:hover,
+.img--outubro--rosa--2:hover,
+.img--outubro--rosa--3:hover,
+.img--outubro--rosa--4:hover,
+.img--outubro--rosa--5:hover {
+  transform: scale(1.2);
+  transition: transform 300ms cubic-bezier(0.91, 0, 0.55, 1.64);
+}
+
+.img--outubro--rosa--2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 90%;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 3px 3px 8px rgb(255, 104, 129);
+  object-fit: cover;
+}
+
+.img--outubro--rosa--3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  height: 90%;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 3px 3px 8px rgb(255, 104, 129);
+  object-fit: cover;
+}
+
+.img--outubro--rosa--4 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  height: 90%;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 3px 3px 8px rgb(255, 104, 129);
+  object-fit: cover;
+}
+
+.img--outubro--rosa--5 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  height: 90%;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 3px 3px 8px rgb(240, 104, 129);
+  object-fit: cover;
+}
+
+.divcliente {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.logoCra {
+  width: 15%;
+  align-self: center;
+  justify-self: center;
+  padding-right: 5rem;
+}
+
+.cliente {
+  font-family: "Raleway", sans-serif;
+  align-self: center;
+  justify-self: center;
+  text-transform: uppercase;
+  padding-right: 2rem;
+  font-weight: 800;
+  color: rgb(255, 104, 129);
+}
+
+.pecaja {
+  width: 15rem;
+  background-color: rgba(255, 104, 129, 0.6);
+  border: 0;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.pecaja:hover {
+  transform: scale(1.1);
+  transition: transform 300ms cubic-bezier(0.91, 0, 0.55, 1.64);
 }
