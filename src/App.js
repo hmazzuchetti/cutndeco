@@ -1,21 +1,37 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 import './App.css';
+
+// Páginas
 import Navbar from './componentes/Navbar/Navbar';
-import Hero from './componentes/hero/Hero';
-import ProdutoNatal from './componentes/produtoNatal/ProdutoNatal';
-import TrabalhosFeitos from './componentes/trabalhosFeitos/TrabalhosFeitos';
-import CardsProdutos from './componentes/cardsProdutos/CardsProdutos';
+import Cadastro from "./componentes/cadastro/Cadastro";
+import Login from "./componentes/login/Login";
+import Fotos from "./componentes/fotos/Fotos";
+import Home from "./componentes/home/Home";
+
 
 
 function App() {
   return (
     <>
-      <div >
+
+      <Router>
         <Navbar />
-        <Hero />
-        <ProdutoNatal />
-        <CardsProdutos />
-        <TrabalhosFeitos />
-      </div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/galeria_de_fotos" element={<Fotos />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+
+        </Routes>
+      </Router>
+
+
     </>
   );
 }

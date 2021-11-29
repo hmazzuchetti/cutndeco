@@ -84,13 +84,14 @@
   position: absolute;
   height: 1em;
   width: 70%;
-  left: 10%;
-  top: 30%;
+  left: 14%;
+  top: 28%;
   z-index: -1;
   opacity: 85%;
   align-self: start;
   justify-self: start;
   box-shadow: 3px 3px 5px black;
+  transition: transform 150ms ease-in-out;
 }
 
 .pPequeno::before {
@@ -99,20 +100,20 @@
   position: absolute;
   height: 1em;
   width: 50%;
-  left: 20%;
-  top: 44%;
+  left: 25%;
+  top: 43%;
   z-index: -1;
   opacity: 65%;
   align-self: start;
   justify-self: start;
   box-shadow: 3px 3px 5px black;
+  transition: transform 150ms ease-in-out;
 }
 
 .texto__produtoNatal:hover > .pGrande::before,
 .texto__produtoNatal:hover > .pPequeno::before {
   transform: scale(1.15 /*Lados*/, 1.5 /*Altura*/);
-  transition: transform 150ms cubic-bezier(0.91, 0, 0.55, 1.64);
-  transform-origin: bottom left;
+  /* transform-origin: bottom left; */
 }
 
 .btns {
@@ -132,6 +133,7 @@
   border-radius: 5%;
   cursor: pointer;
   align-self: end;
+  transition: transform ease-in-out 200ms;
 }
 
 .btnCaixa > p {
@@ -143,9 +145,7 @@
 }
 
 .btnCaixa:hover {
-  transition: transform ease-in 200ms;
   transform: scale(110%);
-  animation: 2s ease-in;
 }
 
 .foto__produto {

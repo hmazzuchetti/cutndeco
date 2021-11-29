@@ -1,0 +1,15 @@
+.botaoDelete {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+
+  font-size: 3vh;
+  text-transform: uppercase;
+  color: rgb(253, 59, 59);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.botaoDelete:hover {
+  background-color: rgb(255, 203, 203);
+}

@@ -1,15 +1,18 @@
 import React from 'react';
 import "./navbar.css";
 import logonavbar from "../../img/logo.png";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <div className="navbar">
+            <Link to="/">Inicio</Link>
+
             <a>Produtos</a>
-            <a>Contato</a>
             <img className="logoNavbar" src={logonavbar} alt="CUT N DECO" />
-            <a>Login</a>
-            <button className="btn-cadastro"><a>Cadastro</a></button>
+            <Link to="/login">Login</Link>
+
+            <Link to="/cadastro">Cadastro</Link>
         </div>
     )
 }

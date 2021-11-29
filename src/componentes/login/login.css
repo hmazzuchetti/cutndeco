@@ -1,0 +1,82 @@
+.bckgdLogin {
+  display: flex;
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerForm {
+  background-color: rgb(165, 253, 209);
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: max-content;
+  padding: 1rem;
+  width: 50%;
+  min-height: 675px;
+  border: 2px solid #ccc;
+  margin: 0.5rem;
+}
+
+.inputLogin {
+  min-height: 50px;
+  width: 100%;
+  border: 2px solid #ccc;
+  align-self: start;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.esqueciSenha {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  align-self: start;
+  line-height: 0;
+}
+
+.btnsLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.login,
+.cadastro {
+  height: 50%;
+  width: 30%;
+  border: none;
+  background-color: var(--cor-detalhes);
+  box-shadow: 4px 2px 5px black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+
+.login:hover,
+.cadastro:hover {
+  transform: scale(110%);
+}
+
+.containerForm h2,
+h1 {
+  font-size: 1.5rem;
+  align-self: end;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+}
+
+.containerForm h1 {
+  align-self: center;
+  justify-self: center;
+  text-transform: uppercase;
+}
+
+.msgTipo {
+  align-self: center;
+  justify-self: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+}
