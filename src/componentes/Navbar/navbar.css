@@ -33,3 +33,24 @@
 .logoNavbar {
   height: 120px;
 }
+
+.sair {
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+}
+
+.sair:hover {
+  color: var(--cor-terceira);
+}
+
+.usuariologado {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+.navItem {
+  text-decoration: none;
+  color: black;
+}

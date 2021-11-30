@@ -14,7 +14,7 @@ function Cadastro() {
     return (
         <div className="bckgdLogin">
             <div className="containerForm">
-                <h1>Bem vindo de volta!</h1>
+                <h1>Cadastro de usuário</h1>
                 <h2>E-mail</h2>
                 <input onChange={(e) => setEmail(e.target.value)} className="inputLogin" placeholder=" E-mail" type="email" />
                 <h2>Senha</h2>

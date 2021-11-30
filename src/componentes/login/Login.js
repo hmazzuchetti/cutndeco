@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
 import "./login.css"
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
+
+import { useSelector, useDispatch } from 'react-redux';
 
 function Login() {
     const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
     const [msgTipo, setMsgTipo] = useState();
 
+    const dispatch = useDispatch();
+
     function logar() {
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, senha).then(userCredential => {
             const user = userCredential.user;
             setMsgTipo("sucesso");
+            dispatch({ type: 'LOG_IN', usuarioEmail: email });
         }).catch(erro => {
             setMsgTipo("erro");
         })
@@ -20,6 +25,9 @@ function Login() {
 
     return (
         <div className="bckgdLogin">
+            {
+                useSelector(state => state.usuarioLogado) > 0 ? <Navigate replace to="/" /> : null
+            }
             <div className="containerForm">
                 <h1>Bem vindo de volta!</h1>
                 <h2>E-mail</h2>
