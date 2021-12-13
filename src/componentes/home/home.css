@@ -13,3 +13,14 @@
 .botaoDelete:hover {
   background-color: rgb(255, 203, 203);
 }
+
+.formAddProduto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.formAddProduto h3 {
+  padding: 0 10px;
+}

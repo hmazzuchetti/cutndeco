@@ -9,9 +9,10 @@ import imgCard5 from "../../img/Natal/natal5.jpg"
 import { db } from "../../firebase/firebase.js";
 import { collection, getDocs } from "firebase/firestore";
 import { setUserId } from '@firebase/analytics';
+import { Link } from 'react-router-dom';
 
 
-function CardsProdutos({ titulo, preco, tipo }) {
+function CardsProdutos({ titulo, preco, tipo, imgUrl, id }) {
 
     const [produtos, setProdutos] = useState([]);
     const produtosCollectionRef = collection(db, "produtos");
@@ -30,7 +31,7 @@ function CardsProdutos({ titulo, preco, tipo }) {
     return (
         <div className="card">
             <div className="imgBx">
-                <img src={imgCard2} alt="Imagem Card" className="imgCard" />
+                <img src={imgUrl} alt="Imagem Card" className="imgCard" />
                 <ul className="action">
                     <li>
                         <a className="linkCompra" href="https://api.whatsapp.com/send?phone=5544998103419" target="_blank">
@@ -41,11 +42,13 @@ function CardsProdutos({ titulo, preco, tipo }) {
                         <span>Comprar produto</span>
                     </li>
                     <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        <span>Mais fotos</span>
+                        <Link to={'/produtoDetalhes/' + id} >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Mais fotos</span>
+                        </Link>
                     </li>
                 </ul>
             </div>
